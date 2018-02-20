@@ -2,7 +2,7 @@
 #-*- coding: utf-8 -*-
 
 #c'est un classe saimple en python 
-
+#class parent 	
 class Voiture:
 
 	# definir un constructeur 
@@ -12,3 +12,16 @@ class Voiture:
 	#definir une methode 
 	def donne_moi_le_modele(self):
 		return "250"
+
+# children class
+
+class Statumoteur(Voiture):
+
+	def etat_du_moteur(self,cle):
+
+		if self.cle==0:
+			print("La voiture est eteind")
+		elif self.cle == 1:
+			print("La voiture est allumer")
+		else :
+			print("verifier la valeur de la cle : o ou 1 !")
